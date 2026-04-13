@@ -1,10 +1,9 @@
 // 5. 변수
 #include <stdio.h>
 
-int global_var;   // 전역변수
+int global_var;  //전역변수는 초기화 하지 않으면 0으로 자동 초기화
 
-void my_func();   // 함수 프로토타입 선언
-
+void my_func();   //함수 프로토타입 선언
 
 int main(int argc, char const *argv[])
 {
@@ -23,39 +22,39 @@ int main(int argc, char const *argv[])
                 printf("%d, %d\n", x, y);
         }
         // printf("%d, %d\n", x, y);
-
+        
         // 전역변수
         printf("%d\n", global_var);
-        my_func();       // 함수 호출
+        my_func();   //함수 호출
         printf("%d\n", global_var);
 
-        //변수의 범위(scope)
-        int i = 3;
+        //변수의 범위(Scope)
+        int i=3;
         {
-                int i = 5;
-                printf("%d\n", i);
+            int i=5;
+            printf("%d\n", i);
         }
+        printf("%d\n", i);
 
-        // 식별자 규칙
-        int score, score2;
-        // int 2score;
-        int _score;  // C 표준
-        int $score;  // 일부 컴파일러에서 허용
+        //식별자 규칙
+        int score2; //2score X
+        int _score;
+        int $score;
         int Score;
-        //int int;
+        int Int;
 
-        // 상수
-        int max_len = 10;
-        const int MAX_LEN = 10;    // 상수
+        //상수
+        int max_len=10; //변수
+        const int Max_Len=10; //상수
 
-        max_len = 20;
-        // MAX_LEN = 20;   // 오류  lvalue required as left operand of assignment
+        max_len=20;
+        //Max_Len=20; //상수이므로 수정 불가
 
         return 0;
 }
 
 void my_func()
 {
-        printf("%d\n", global_var);
-        global_var = 10;
+   printf("%d\n", global_var);
+   global_var=10;
 }

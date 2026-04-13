@@ -1,8 +1,8 @@
 {
   "code-runner.saveFileBeforeRun": true,
   "code-runner.runInTerminal": false,
-  "editor.tabSize": 100,
+  "editor.tabSize": 2,
   "terminal.integrated.fontSize": 15,
-  "editor.fontSize": 14,
+  "editor.fontSize": 30,
   "terminal.integrated.defaultProfile.windows": "Command Prompt"
 }
