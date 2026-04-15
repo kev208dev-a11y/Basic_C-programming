@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/chaeho/Basic_C-programming/02_operator/ex2'
+relocations:     []
+...
