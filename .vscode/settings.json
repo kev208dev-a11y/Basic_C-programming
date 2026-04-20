@@ -3,6 +3,6 @@
   "code-runner.runInTerminal": false,
   "editor.tabSize": 2,
   "terminal.integrated.fontSize": 15,
-  "editor.fontSize": 30,
+  "editor.fontSize": 20,
   "terminal.integrated.defaultProfile.windows": "Command Prompt"
 }
