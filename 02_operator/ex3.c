@@ -26,7 +26,10 @@ int main(int argc, char const *argv[])
 
         //윤년계산(365.2422)
         int year = 2026;
-        printf("%s\n", (year % 4 == 0 && year % 100 != 0) || year % 400 == 0 ? "윤년" : "평년");
-
+        if((year%4==0 && year%100!=0) || year%400==0) {
+                printf("윤년입니다.\n");
+        } else {
+                printf("평년입니다.\n");
+        }
         return 0;
 }
